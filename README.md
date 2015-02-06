@@ -6,6 +6,7 @@
 /path/to/env/easy_install "pyramid==1.5.2"
 /path/to/env/easy_install "deform==2.0a2"
 /path/to/env/easy_install "beautifulsoup==3.2.1"
+/path/to/env/easy_install "WebTest"
 /path/to/env/pserve pyramid-starter-kit/development.ini --reload
 ```
 
@@ -20,5 +21,9 @@ To demonstrate the major features test with the following urls
 - http://en.wikipedia.org/wiki/Wikipedia:Wikipedia_Signpost (No Table Of Contents)
 
 ### Unit Testing
-- Unit Tests ... still to come ... in the not sooo distant future.
-- python.exe setup.py test -q
+
+Requires [WebTest](http://webtest.pythonpaste.org/en/latest/) which should have been installed @ step 1, Install Pyramid
+
+```shell
+/path/to/env/python pyramid-starter-kit/setup.py test -q
+```
