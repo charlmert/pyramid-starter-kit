@@ -9,7 +9,7 @@
 /path/to/env/pserve pyramid-starter-kit/development.ini --reload
 ```
 
-- Visit http://localhost:6543/ in your browser, preferably google chrome.
+- Visit [link](http://localhost:6543/) in your browser, preferably google chrome.
 
 ### To demonstrate the major features test with the following urls
 - http://en.wikipedia.org/wiki/Wikipedia (Valid URL + Table Of Contents Displayed)
