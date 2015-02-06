@@ -20,6 +20,8 @@ To demonstrate the major features test with the following urls
 - http://www.google.com (Invalid URL)
 - http://en.wikipedia.org/wiki/Wikipedia:Wikipedia_Signpost (No Table Of Contents)
 
+These url's are used in the functional tests as well.
+
 ### Unit Testing
 
 Requires [WebTest](http://webtest.pythonpaste.org/en/latest/) which should have been installed @ step 1, Install Pyramid
