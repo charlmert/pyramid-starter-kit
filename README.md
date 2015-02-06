@@ -4,8 +4,8 @@
 - easy_install "pyramid==1.5.2"
 - easy_install "deform==2.0a2"
 - easy_install "beautifulsoup==3.2.1"
-- cd pyramid-starter-kit/scaffolds
-- Run app# /path/to/pcreate pyramid-starter-kit/scaffolds/development.ini --reload
+- cd pyramid-starter-kit
+- Run app# /path/to/env/pserve pyramid-starter-kit/development.ini --reload
 - Visit http://localhost:6543/view in your browser, preferably google chrome.
 
 ### To demonstrate the major features test with the following urls
@@ -15,3 +15,4 @@
 
 ### Unit Testing
 - Unit Tests ... still to come ... in the not sooo distant future.
+- python.exe setup.py test -q
