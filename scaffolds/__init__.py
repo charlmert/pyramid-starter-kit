@@ -10,8 +10,7 @@ def main(global_config, **settings):
     config.add_route('form_view', '/')
 
     config.add_route('view', '/view')
-    config.add_static_view('deform_static', 'deform:static/')
-    # config.scan('.views')
+    config.add_static_view('static', 'deform:static')
 
     config.scan()
     return config.make_wsgi_app()
