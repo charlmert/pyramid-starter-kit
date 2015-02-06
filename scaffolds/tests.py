@@ -20,6 +20,14 @@ class ViewTests(unittest.TestCase):
         self.assertEqual(info['url'], None)
         self.assertTrue('id="deform"' in info['form'])
 
+    def test_form_view(self):
+        from .views import form_view
+        request = testing.DummyRequest()
+        info = form_view(request)
+        
+        self.assertTrue('id="deform"' in info['form'])
+        
+# Functional Tests, (Requires WebTest http://webtest.pythonpaste.org/en/latest/)
 class FunctionalTests(unittest.TestCase):
     def setUp(self):
         from scaffolds import main
