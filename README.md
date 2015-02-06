@@ -12,7 +12,9 @@
 - Visit [http://localhost:6543/](http://localhost:6543/) in your browser, preferably google chrome.
 
 ### Test URL's
-## To demonstrate the major features test with the following urls
+
+To demonstrate the major features test with the following urls
+
 - http://en.wikipedia.org/wiki/Wikipedia (Valid URL + Table Of Contents Displayed)
 - http://www.google.com (Invalid URL)
 - http://en.wikipedia.org/wiki/Wikipedia:Wikipedia_Signpost (No Table Of Contents)
