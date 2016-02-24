@@ -1,13 +1,20 @@
 ### Install Pyramid + Deps
 - When using virtual environments, install appropriately
-- Install Pyramid for Python 2.7 http://docs.pylonsproject.org/projects/pyramid/en/latest/narr/install.html#installing-chapter
+- Install (Ubuntu 12.04.3) Pyramid for Python 2.7 http://docs.pylonsproject.org/projects/pyramid/en/latest/narr/install.html#installing-chapter
 
 ```shell
-/path/to/env/easy_install "pyramid==1.5.2"
-/path/to/env/easy_install "deform==2.0a2"
-/path/to/env/easy_install "beautifulsoup==3.2.1"
-/path/to/env/easy_install "WebTest"
-/path/to/env/pserve pyramid-starter-kit/development.ini --reload
+apt-get install python-setuptools build-essential
+$EASY_INSTALL=$(which easy_install)
+$PSERVE=$(which pserve)
+$EASY_INSTALL "pyramid==1.5.2"
+$EASY_INSTALL "deform==2.0a2"
+$EASY_INSTALL "beautifulsoup==3.2.1"
+$EASY_INSTALL "WebTest"
+$EASY_INSTALL "pyramid-debugtoolbar"
+$EASY_INSTALL "pyramid-chameleon"
+$EASY_INSTALL "BeautifulSoup"
+export PYTHONPATH=$(pwd)/pyramid-starter-kit
+$PSERVE pyramid-starter-kit/development.ini --reload
 ```
 
 - Visit [http://localhost:6543/](http://localhost:6543/) in your browser, preferably google chrome.
