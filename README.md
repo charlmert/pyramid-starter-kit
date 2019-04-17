@@ -3,7 +3,11 @@
 - Install (Ubuntu 12.04.3) Pyramid for Python 2.7 http://docs.pylonsproject.org/projects/pyramid/en/latest/narr/install.html#installing-chapter
 
 ```shell
+git clone git@github.com:charlmert/pyramid-starter-kit.git
+cd pyramid-starter-kit
+python setup.py develop
 sudo apt-get install python-setuptools build-essential
+sudo apt-get install python-iso8601 python-sqlalchemy 
 pip install "pyramid==1.5.2"
 pip install "deform==2.0a2"
 pip install "beautifulsoup==3.2.1"
@@ -12,7 +16,7 @@ pip install "pyramid-debugtoolbar"
 pip install "pyramid-chameleon"
 pip install "BeautifulSoup"
 pip install "Scaffold"
-pserve pyramid-starter-kit/development.ini --reload
+pserve development.ini --reload
 ```
 
 - Visit [http://localhost:6543/](http://localhost:6543/) in your browser, preferably google chrome.
